@@ -32,7 +32,7 @@ class Chomper {
                 ActionListener animate = new ActionListener(){
 
                     private int index = 0;
-                  //  @Override
+                    @Override
                     public void actionPerformed(ActionEvent e) {
                         if (index<frames.length-1) {
                             index++;
@@ -63,8 +63,6 @@ class Chomper {
                 JOptionPane.showMessageDialog(null, gui);
             }
         };
-        // Swing GUIs should be created and updated on the EDT
-        // http://docs.oracle.com/javase/tutorial/uiswing/concurrency/initial.html
         SwingUtilities.invokeLater(r);
     }
 }
