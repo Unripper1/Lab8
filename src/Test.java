@@ -7,7 +7,10 @@ class Shape{
 }
 class Four extends Shape{
     Random random=new Random();
-    Color c = new Color(250,100,101);
+    float r = random.nextFloat();
+    float g = random.nextFloat();
+    float b = random.nextFloat();
+    Color c = new Color(r,g,b);
     int x1= random.nextInt(250);
     int x2=random.nextInt(250);
     int x3=random.nextInt(250);
@@ -16,7 +19,10 @@ class Four extends Shape{
 }
 class Three extends Shape{
     Random random=new Random();
-    Color c = new Color(255,200,111);
+    float r = random.nextFloat();
+    float g = random.nextFloat();
+    float b = random.nextFloat();
+    Color c = new Color(r,g,b);
     int x1= random.nextInt(250);
     int x2=random.nextInt(250);
     int y1=random.nextInt(250);
@@ -26,7 +32,10 @@ class Three extends Shape{
 }
 class Circle extends Shape{
     Random random=new Random();
-    Color c = new Color(138, 23, 184);
+    float r = random.nextFloat();
+    float g = random.nextFloat();
+    float b = random.nextFloat();
+    Color c = new Color(r,g,b);
     int x1=random.nextInt(250);
     int x2=random.nextInt(250);
     int x3=random.nextInt(250);
@@ -43,9 +52,9 @@ public class Test extends JFrame {
             int x1 = rect.x1 + 250 * i + 50;
             int x2 = rect.x2 + 250 * i + 50;
             int x3 = rect.x3 + 250 * i + 50;
-            int y1 = rect.y1 + 500;
-            int y2 = rect.y2 + 500;
-            int y3 = rect.y3 + 500;
+            int y1 = rect.y1 + 300;
+            int y2 = rect.y2 + 300;
+            int y3 = rect.y3 + 300;
             g.setColor(rect.c);
             g.drawLine(x1, y1, x2, y2);
             g.drawLine(x2, y2, x3, y3);
@@ -53,7 +62,7 @@ public class Test extends JFrame {
         }
         for (int i = 0; i < 5; i++) {
             Four rect = new Four();
-            int x1 = rect.x1 + 300 * i;
+            int x1 = rect.x1 + 250 * i;
             int x2 = rect.x2;
             int x3 = rect.x3;
             int x4 = rect.x4;
@@ -63,8 +72,8 @@ public class Test extends JFrame {
         }
         for (int i = 0; i < 10; i++) {
             Circle rect = new Circle();
-            int x1 = rect.x1 + 300 * i;
-            int x2 = rect.x2+800;
+            int x1 = rect.x1 + 250 * i;
+            int x2 = rect.x2+600;
             int x3 = rect.x3;
             int x4 = rect.x4;
             g.setColor(rect.c);
