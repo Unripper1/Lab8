@@ -3,7 +3,7 @@ import java.awt.*;
 import java.util.Random;
 
 class Shape{
-    
+
 
 }
 class Four extends Shape{
@@ -17,6 +17,7 @@ class Four extends Shape{
     int x3=random.nextInt(250);
     int x4=random.nextInt(250);
 
+    
 }
 class Three extends Shape{
     Random random=new Random();
