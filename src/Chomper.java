@@ -8,6 +8,7 @@ import javax.swing.*;
 class Chomper {
 
     public static void main(String[] args) throws Exception {
+
         Image[] frames = {
                 ImageIO.read(new URL("https://www.promarinetrade.com/cache/promarine/public/shop_product_picture/_1200x800x0/4602_A.jpg")),
                 ImageIO.read(new URL("https://detskiychas.ru/wp-content/uploads/2012/10/bukva-be.jpg")),

@@ -9,6 +9,7 @@ public class ImageTest {
         {
             public void run()
             {
+
                 ImageFrame frame = new ImageFrame(args[0]);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setVisible(true);

@@ -3,6 +3,7 @@ import java.awt.*;
 import java.util.Random;
 
 class Shape{
+    
 
 }
 class Four extends Shape{
